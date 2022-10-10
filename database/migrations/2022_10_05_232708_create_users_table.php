@@ -2,12 +2,12 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
-class CreateAuthorizationTable extends Migration
+class CreateUsersTable extends Migration
 {
     public function up()
     {
-        Schema::create('authorization', function (Blueprint $table) {
-            $table->bigIncrements('userId');
+        Schema::create('users', function (Blueprint $table) {
+            $table->id();
             $table->string('login');
             $table->string('password');
             $table->string('name');
